@@ -65,10 +65,19 @@ header{
   font-weight: 700;
   color: var(--brand);
   text-decoration: none;
-  display: flex;
+
+  display: inline-flex; /* importante */
   align-items: center;
-  gap: 10px;
+  gap: 5px; /* espaço entre logo e texto */
 }
+
+.header-logo {
+  width: 28px;
+  height: 28px;
+  margin-right: 0; /* remove margem extra */
+  display: block;
+}
+
 .site-logo .cross { font-size: 1.4rem; color: var(--accent); }
 nav { display: flex; gap: 24px; }
 nav a {
@@ -404,13 +413,21 @@ h2.section-title {
 
 /* ── FOOTER ── */
 footer {
-  background: #1a1a1a;
-  color: #aaa;
-  text-align: center;
-  padding: 22px 24px;
-  font-size: .82rem;
+    position: relative;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 25px 20px;
 }
-footer a { color: #ccc; text-decoration: none; }
+
+.footer-logo {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+
+    width: 50px; /* ajuste conforme necessário */
+    height: auto;
+}
 
 /* ── RESPONSIVE ── */
 @media (max-width: 600px) {
