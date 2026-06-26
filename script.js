@@ -61,6 +61,11 @@ function togglePrayer(btn){
     box.classList.toggle("open");
 }
 
+function togglePrayer(button) {
+    const prayerBox = button.parentElement;
+    prayerBox.classList.toggle('open');
+}
+
 function trocarImagem(pasta, numero, elemento) {
 
     const img = document.getElementById(`img-${pasta}`);
