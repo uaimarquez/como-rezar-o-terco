@@ -21,14 +21,18 @@ body {
 }
 
 /* ── HEADER ── */
+.texto-centralizado {
+    text-align: center;
+}
+
 .step-image {
-    width: 100%;
-    margin: 40px 0;
+    width: 57%;
+    margin: 40px auto; /* centraliza horizontalmente */
     text-align: center;
 }
 
 .step-image img {
-    width: 100%;
+    width: 100%; /* ocupa toda a largura da div pai */
     max-width: 800px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
